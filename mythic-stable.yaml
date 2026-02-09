@@ -39,10 +39,17 @@ tasks:
 
   - action: download_file
     path: ./tmp/oxmysql.zip
-    url: https://github.com/overextended/oxmysql/releases/latest/download/oxmysql.zip
+    url: https://github.com/communityox/oxmysql/releases/latest/download/oxmysql.zip
   - action: unzip
-    dest: ./resources
+    dest: ./resources/[ox]/oxmysql
     src: ./tmp/oxmysql.zip
+
+  - action: download_file
+    path: ./tmp/ox_lib.zip
+    url: https://github.com/communityox/ox_lib/releases/latest/download/ox_lib.zip
+  - action: unzip
+    dest: ./resources/[ox]/ox_lib
+    src: ./tmp/ox_lib.zip
 
   - action: download_file
     path: ./tmp/screenshot-basic.zip
