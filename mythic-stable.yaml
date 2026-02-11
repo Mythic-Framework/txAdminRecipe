@@ -41,14 +41,14 @@ tasks:
     path: ./tmp/oxmysql.zip
     url: https://github.com/communityox/oxmysql/releases/latest/download/oxmysql.zip
   - action: unzip
-    dest: ./resources/[ox]/oxmysql
+    dest: ./resources/[ox]
     src: ./tmp/oxmysql.zip
 
   - action: download_file
     path: ./tmp/ox_lib.zip
     url: https://github.com/communityox/ox_lib/releases/latest/download/ox_lib.zip
   - action: unzip
-    dest: ./resources/[ox]/ox_lib
+    dest: ./resources/[ox]
     src: ./tmp/ox_lib.zip
 
   - action: download_file
